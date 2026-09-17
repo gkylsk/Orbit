@@ -45,3 +45,5 @@ The game focuses on simple gravity-based movement and timing rather than traditi
 ## Development
 
 Orbit was created as a small independent Unity project to explore 2D gameplay programming, gravity-based movement, orbital mechanics, and creating a complete playable game with custom-made pixel art.
+
+[Pixel-Art](https://gkylsk.itch.io/orbit-sprites)
