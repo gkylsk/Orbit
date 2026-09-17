@@ -7,7 +7,6 @@ public class SpacecraftSelection : MonoBehaviour
 
     public void SelectedSpacecraft(int index)
     {
-        Debug.Log(index);
         AudioManager.instance.PlaySfx("Button");
         selectedSpacecraft = index;
     }

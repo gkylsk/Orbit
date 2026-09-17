@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private Planet[] planets;
     [SerializeField]
-    private int destinationIndex;
+    private Planet destinationPlanet;
     private int currentPlanetIndex = 0;
 
     private void Start()
@@ -24,17 +24,7 @@ public class LevelManager : MonoBehaviour
 
     public void ReachPlanet(Planet planet)
     {
-        for (int i = 0; i < planets.Length; i++)
-        {
-            if (planets[i] == planet)
-            {
-                currentPlanetIndex = i;
-                break;
-            }
-        }
-
-
-        if (currentPlanetIndex == destinationIndex)
+        if (planet == destinationPlanet)
         {
             LevelComplete();
             return;

@@ -20,6 +20,7 @@ public class SpacecraftController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("TRIGGER ENTERED: " + collision.name);
         Planet planet = collision.GetComponentInParent<Planet>();
 
         if(planet == null)
